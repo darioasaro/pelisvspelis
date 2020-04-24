@@ -1,6 +1,14 @@
 -- DROP DATABASE IF EXISTS `competencias`;
 -- CREATE DATABASE `competencias`;
 -- USE `competencias`;
+DROP TABLE IF EXISTS `competencias`;
+
+CREATE TABLE `competencias` (
+  `id` int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  `nombre` varchar(100),
+  `genero_id` INT)
+ ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
 
 DROP TABLE IF EXISTS `actor`;
 
